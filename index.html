@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="location">
+    <div class="tooltip">
+      <span class="tooltiptext">Type: Kiev, Moscow etc..</span>
+      <input id="weather-input" type="text" name="city" placeholder="Город" />
+      <button id="weather-btn">Получить погоду</button>
+    </div>
+
+
+
+  </div>
+  <div class="temperature-info">
+    <div class="timezone-section">
+      <span class="timezone__info">Timezone:</span>
+      <span class="timezone__value"></span>
+      <span class="timezone__value2"></span>
+    </div>
+    <div class="degree-section">
+      <span class="temperature__info">Temperature:</span>
+      <span class="temperature__value"></span>
+    </div>
+    <div class="pressure-section">
+      <span class="pressure__info">Pressure:</span>
+      <span class="pressure__value"></span>
+    </div>
+    <div class="humidity-section">
+      <span class="humidity__info">Humidity:</span>
+      <span class="humidity__value"></span>
+    </div>
+    <div class="max-temp-section">
+      <span class="max-temp__info">Max-Temp:</span>
+      <span class="max-temp__value"></span>
+    </div>
+    <div class="min-temp-section">
+      <span class="min-temp__info">Min-Temp:</span>
+      <span class="min-temp__value"></span>
+    </div>
+    <div class="weather-description">
+      <span class="weather-description__info">Description:</span>
+      <span class="weather-description__value"></span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

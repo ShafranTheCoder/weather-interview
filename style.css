@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background:
+    linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  font-family: sans-serif;
+  color: white;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+}
+
+.location,
+.temperature-info {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature-info {
+  flex-direction: column;
+
+}
+
+.timezone-section span {
+  font-size: 30px;
+}
+
+.degree-section span {
+  font-size: 30px;
+}
+
+#weather-input {
+  padding: 10px;
+}
+
+#weather-btn {
+  cursor: pointer;
+  padding: 10px;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+}
+
+/*----------------Tooltips---------------*/
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  font-size: 18px;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
